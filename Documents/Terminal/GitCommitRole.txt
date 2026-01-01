@@ -1,0 +1,75 @@
+Git commit roles:
+
+1. feat – New feature
+Used when introducing a new feature or functionality to the codebase.
+Example:
+feat (user-auth): add login functionality
+
+- detail feature
+
+2. fix – Bug fix
+Used when fixing a bug in the codebase.
+Example:
+fix (cart): resolve issue with empty cart error
+
+3. docs – Documentation
+Used for updates or improvements to the documentation.
+Example:
+docs (readme): update installation instructions
+
+4. style – Code style changes (e.g., formatting)
+Used for changes related to code formatting or styling, without affecting functionality.
+Example:
+style (button): reformat button class name
+
+5. refactor – Code refactoring
+Used when refactoring code (i.e., making changes that improve the structure or readability of the code without changing its behavior).
+Example:
+refactor (api): simplify user data handling
+
+6. perf – Performance improvements
+Used when optimizing or improving the performance of the code.
+Example:
+perf (database): optimize query performance
+
+7. test – Test related changes
+Used when adding or modifying tests.
+Example:
+test (login): add unit tests for login function
+
+8. chore – Miscellaneous tasks
+Used for routine tasks, such as updating dependencies, cleaning up the codebase, etc.
+Example:
+chore (deps): update lodash to v4.17.21
+
+9. build – Build-related changes
+Used when making changes related to the build process or dependencies.
+Example:
+build (webpack): configure production bundle optimization
+
+10. ci – Continuous Integration related changes
+Used for changes related to the CI/CD pipeline, such as updating configuration files or scripts.
+Example:
+ci (travis): add deployment step to CI pipeline
+
+11. revert – Reverting a previous commit
+Used when you need to revert a previous commit.
+Example:
+revert: revert "feat(user-auth): add login functionality"
+
+12. merge – Merging branches
+Used when merging branches or resolving merge conflicts.
+Example:
+sql
+Copy code
+merge (feature/login): merge login functionality into main
+
+
+Git branch roles:
+
+feature/*, 
+bugfix/*,
+chore/*, 
+refactor/*
+release/*
+hotfix/* 
