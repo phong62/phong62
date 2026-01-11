@@ -1,0 +1,63 @@
+================================== # ORA-01792: maximum number of columns in a table or view is 1000 ==================================
+SQL> alter system set "_fix_control"='17376322:OFF';
+
+================================== # ORA-01658: unable to create INITIAL extent for segment in tablespace TS_DATA ==================================
+ALTER DATABASE DATAFILE '/u01/app/oracle/product/12.2.0/dbhome_1/dbs/DMS_VINASOY_DATA.dbf' AUTOEXTEND ON MAXSIZE UNLIMITED; 
+
+================================== # RESTART ORACLE # ==================================
+//sesart oracle
+giờ login vào user Oracle, pass 
+
+How to start up service oracle
+ - sqlplus sys as sysdba;
+nhập password: 
+ - shutdown abort
+ - startup
+ - exit
+ - lsnrctl stop
+ - lsnrctl start
+ - tnsping orcl
+ - lsnrctl status
+ 
+================================== # RESTART - TOP SERVER # ==================================
+  - init 6
+  - init 0
+
+docker builder prune -af -- Xóa cache docker
+
+docker system prune -a --volumes -f -- xóa volumes không dùng
+
+sync; echo 3 > /proc/sys/vm/drop_caches -- Giải phóng ram
+
+================================== # PUBLIC PORT # ==================================
+public port firewall
+
+firewall-cmd --zone=public --permanent --add-port=
+or 
+firewall-cmd --zone=public --add-port=
+
+example:
+firewall-cmd --zone=public --add-port=8150/tcp
+
+then
+firewall-cmd —reload
+
+then
+firewall-cmd —list-port
+
+================================== # Merge code # ==================================
+- git merge --squash branch
+
+================================== # CHECK NETWORK # ==================================
+- systemctl status NetworkManager
+
+- systemctl restart NetworkManager
+
+
+// loi day bo nho xoa data o đường dẫn /u01/app/oracle/diag/rdbms/orcl/orcl
+// chay 1 trong 2 lệnh dưới để xóa
+*.trc -mtime +7 -exec rm {} \;
+find . -name "*.trc" -print0 | xargs -0 rm
+find /u01/app/oracle/diag/rdbms/orcl/orcl/trace \( -name "*.trc" -o -name "*.trm" \) -exec rm -f {} \;
+
+select * from kpi_register as of timestamp (systimestamp - interval '20' MINUTE)
