@@ -32,26 +32,7 @@
   <span><img src="https://img.shields.io/badge/MongoDB-282C34?logo=mongodb&logoColor=47A248" alt="MongoDB" title="MongoDB" height="25" /></span>
 </div>
 
-<h2 align="center">🔥 GitHub Stats 🔥</h2>
-<br>
-<div align="center">
-  <a href="https://github.com/devnguoilao" title="devnguoilao">
-    <img
-      width="330"
-      align="left"
-      src="https://github-readme-stats-sigma-five.vercel.app/api/top-langs/?username=devnguoilao&title_color=61dafb&text_color=ffffff&icon_color=61dafb&bg_color=20232a&langs_count=10&layout=compact&hide_border=true"
-    />
-  </a>
-  <a href="https://github.com/devnguoilao" title="devnguoilao">
-  <img
-    align="right"
-    width="434"
-    src="https://github-readme-stats-sigma-five.vercel.app/api?username=devnguoilao&show_icons=true&theme=react&hide_border=true&include_all_commits=true&count_private=true"
-  />
-</a>
-</div>
-
-<br><br><br><br><br><br><br><br>
+<br><br>
 <h2 align="center">❤️ Where to find me ❤️</h2>
 <br>
 <div align="center">
